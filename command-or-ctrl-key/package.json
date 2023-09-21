@@ -1,0 +1,38 @@
+{
+  "name": "@marvin-utils/command-or-ctrl-key",
+  "version": "0.1.0",
+  "description": "A utility to get the Command key (⌘) for macOS or the Ctrl key for other operating systems.",
+  "main": "dist/@marvin-utils/command-or-ctrl-key.js",
+  "module": "dist/@marvin-utils/command-or-ctrl-key.esm.js",
+  "browser": "dist/@marvin-utils/command-or-ctrl-key.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user-focus/marvin-utils.git"
+  },
+  "keywords": [
+    "keyboard",
+    "shortcut",
+    "macos",
+    "ctrl",
+    "command",
+    "cmd"
+  ],
+  "author": "devcer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/user-focus/marvin-utils/issues"
+  },
+  "homepage": "https://github.com/user-focus/marvin-utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "rollup": "^2.36.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}
