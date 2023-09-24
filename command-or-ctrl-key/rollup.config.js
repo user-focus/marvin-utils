@@ -1,34 +1,12 @@
-import resolve from "rollup-plugin-node-resolve";
+import typescript from "rollup-plugin-typescript2";
 import commonjs from "rollup-plugin-commonjs";
-import babel from "rollup-plugin-babel";
-import pkg from "./package.json";
+import resolve from "rollup-plugin-node-resolve";
 
-export default [
-  {
-    input: "src/index.js", // your entry point
-    output: {
-      name: "@marvin-utils/command-or-ctrl-key", // package name
-      file: pkg.browser,
-      format: "umd",
-    },
-    plugins: [
-      resolve(),
-      commonjs(),
-      babel({
-        exclude: ["node_modules/**"],
-      }),
-    ],
+export default {
+  input: "src/index.ts",
+  output: {
+    file: "dist/index.js",
+    format: "cjs",
   },
-  {
-    input: "src/index.js", // your entry point
-    output: [
-      { file: pkg.main, format: "cjs" },
-      { file: pkg.module, format: "es" },
-    ],
-    plugins: [
-      babel({
-        exclude: ["node_modules/**"],
-      }),
-    ],
-  },
-];
+  plugins: [resolve(), commonjs(), typescript()],
+};

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES2015",  // Use ES2015 or another version compatible with Rollup
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*.ts", "custom.d.ts" ],
+  "exclude": ["node_modules"]
+}
