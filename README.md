@@ -25,6 +25,6 @@ Here are some of the utilities available in this collection:
 
 We welcome contributions from the open-source community. If you have any ideas for new utilities or improvements to existing ones, please feel free to submit a pull request. Before contributing, please read our contribution guidelines.
 
-##License
+## License
 
-This repository is licensed under the MIT License. See the LICENSE file for more details.
+This repository is licensed under the MIT License. See the [LICENSE](https://github.com/user-focus/marvin-utils/blob/main/LICENSE) file for more details.
