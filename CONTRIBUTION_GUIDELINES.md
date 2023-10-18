@@ -5,7 +5,7 @@ We welcome your contributions to help improve this package. Your efforts are gre
 1. **Fork the Repository**: Begin by forking the repository and then clone it to your local machine.
 
     ```
-    git clone https://github.com/your-username/repository-name.git
+    git clone https://github.com/user-focus/marvin-utils.git
     ```
 
 2. **Create a New Branch**: Create a new branch for your feature or bug fix. Ensure your branch name is meaningful and descriptive.
