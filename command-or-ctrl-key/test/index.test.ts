@@ -1,4 +1,5 @@
 import { getCommandOrCtrlKey } from "../src/index";
+import { DEFAULT_CONFIG } from "../src/constants";
 
 describe("getCommandOrCtrlKey", () => {
   const originalUserAgent = navigator.userAgent;
@@ -21,7 +22,7 @@ describe("getCommandOrCtrlKey", () => {
 
   it('should return "⌘" on a Mac platform', () => {
     const result = getCommandOrCtrlKey();
-    expect(result).toBe("⌘");
+    expect(result).toBe(DEFAULT_CONFIG.mac);
   });
 
   it('should return "Ctrl" on a non-Mac platform', () => {
@@ -32,7 +33,7 @@ describe("getCommandOrCtrlKey", () => {
     });
 
     const result = getCommandOrCtrlKey();
-    expect(result).toBe("Ctrl");
+    expect(result).toBe(DEFAULT_CONFIG.others);
   });
 
   it('should return "Ctrl" when userAgent is not recognizable', () => {
@@ -43,6 +44,6 @@ describe("getCommandOrCtrlKey", () => {
     });
 
     const result = getCommandOrCtrlKey();
-    expect(result).toBe("Ctrl");
+    expect(result).toBe(DEFAULT_CONFIG.others);
   });
 });
